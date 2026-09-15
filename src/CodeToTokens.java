@@ -13,13 +13,12 @@ public class CodeToTokens {
 
             char current = code.charAt(i);
 
-            // Whitespace
+            
             if (Character.isWhitespace(current)) {
                 i++;
                 continue;
             }
 
-            // (
             if (current == '(') {
                 tokens.add(
                     new Token(TokenType.LEFT_PAREN, "(")
@@ -29,7 +28,6 @@ public class CodeToTokens {
                 continue;
             }
 
-            // )
             if (current == ')') {
                 tokens.add(
                     new Token(TokenType.RIGHT_PAREN, ")")
