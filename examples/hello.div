@@ -1,5 +1,0 @@
-print("Hello, DIVINE!")
-
-let x = 1
-let y = 2 
-print(x+y)
